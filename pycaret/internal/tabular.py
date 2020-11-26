@@ -8372,7 +8372,7 @@ def predict_model(
     if score is not None:
         d = []
         for i in range(0, len(score)):
-            d.append(score[i][pred[i]])
+            d.append(score[i][int(pred[i])])
 
         score = d
         try:
